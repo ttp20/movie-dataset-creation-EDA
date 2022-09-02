@@ -20,6 +20,9 @@ def test_standard_billion():
 def test_standard_thousand():
 	assert money_conversion("$900.9 thousand") == 900900
 
+def test_capitalized_amount():
+	assert money_conversion("$123.456 Thousand") == 123456
+
 def test_range():
 	assert money_conversion("$3.5-4 million") == 3500000
 
